@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename compilation unit &apos;chapter2.Exception.java&apos; to &apos;ExceptionErr.java&apos;&#x0D;&#x0A;- Original project: &apos;JavaBasic&apos;&#x0D;&#x0A;- Original element: &apos;chapter2.Exception.java&apos;&#x0D;&#x0A;- Renamed element: &apos;chapter2.ExceptionErr.java&apos;" description="Rename compilation unit &apos;Exception.java&apos;" flags="2" id="org.eclipse.jdt.ui.rename.compilationunit" input="/src&lt;chapter2{Exception.java" name="ExceptionErr.java" references="false" stamp="1689223267937" version="1.0"/>
+</session>

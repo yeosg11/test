@@ -1,0 +1,78 @@
+package chapter3;
+
+import java.util.ArrayList;
+import java.util.HashSet;
+import java.util.LinkedHashSet;
+import java.util.List;
+import java.util.Set;
+import java.util.TreeSet;
+
+// Collection Framework
+// 데이터를 저장하는 구조를 제공하는 표준화된 인터페이스 및 클래스
+// 저장, 검색, 수정, 삭제에 대한 기능을 제공
+// 
+
+public class CollectionFramework {
+
+	public static void main(String[] args) {
+		
+		// List 인터페이스
+		// 순서가 있고 중복을 허용하는 데이터 저장 구조를 표현할 때 사용
+		// 1. ArrayList 구현체
+		// 내부적인 인덱스를 사용하여 요소를 저장 - 인덱스로의 접근이 빠름
+		
+		List<Integer> arrayList = new ArrayList<Integer>(); //[]
+		//list에 데이터 추가 -add();
+		arrayList.add(10); // [10]
+		arrayList.add(12); // [10,12]
+		arrayList.add(1, 13); // [10,13,12]
+		// arrayList.add("10");
+		System.out.println(arrayList);
+		//list에 요소 불러오기 - get();
+		System.out.println(arrayList.get(2));
+		// list에 요소 수정하기 -set();
+	    arrayList.set(1, 100);
+	    System.out.println(arrayList);
+	    
+		// 2. LinkedList 구현체
+		// 내부적인 이중 연결 리스트 (요소와 요소의 관계가 맻어져 있음)를 사용하여 요소를 저장 - 데이터 추
+	    // Set 인터페이스
+	    // 순서가 없고 중복을 허용하지 않는 데이터 저장 구조를 표현할 때 사용
+	    
+	    // 1. HashSet
+	    // 해싱 기법을 이용해서 요소를 저장 - 검색 속도가 빠름
+	    Set<Integer> hashSet = new HashSet<Integer>();
+	    // set에 데이터 추가 - add();
+	    hashSet.add(99);
+	    hashSet.add(77);
+	    // hashSet.add(1, 0);
+	    hashSet.add(99);
+	    System.out.println(hashSet);
+	    
+	    // set에 데이터 존재 여부 - contains();
+	    System.out.println(hashSet.contains(98));
+	    
+	    // set에 데이터 삭제 - remove();
+	    hashSet.remove(99);
+	    System.out.println(hashSet);
+	    System.out.println(hashSet.size());
+	    
+	    // 2. LinkedHashSet
+	    // 해싱 기법과 요소와 요소간의 연결을 이용해서 요소를 저장 - 추가, 삭제 빠름
+	    Set<Integer> linkedHashSet = new LinkedHashSet<Integer>();
+	    
+	    
+	    //3. TreeSet
+	    // Tree 구조를 사용하여 요소를 저장 - 요소가 정렬되어 저장됨.
+	    Set<Integer> treeSet = new TreeSet<Integer>();
+	    treeSet.add(99);
+	    treeSet.add(77);
+	    System.out.println(treeSet);
+	    
+	    
+	    
+	    
+	    
+	}
+
+}

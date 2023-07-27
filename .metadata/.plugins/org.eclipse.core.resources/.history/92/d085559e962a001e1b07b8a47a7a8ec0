@@ -1,0 +1,10 @@
+package com.yeosg1.board.repository;
+
+import com.yeosg1.board.entity.Board;
+
+public interface BoardRepository extends Repository <Board, Integer> {
+
+
+
+	
+}

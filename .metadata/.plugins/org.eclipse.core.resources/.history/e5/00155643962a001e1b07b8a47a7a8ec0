@@ -1,0 +1,32 @@
+package com.yeosg1.board.repository.implement;
+
+import com.yeosg1.board.entity.User;
+import com.yeosg1.board.repository.UserRepository;
+
+public class UserRepositoryImplement implements UserRepository {
+
+	@Override
+	public boolean create(User entity) {
+		// TODO Auto-generated method stub
+		return false;
+	}
+
+	@Override
+	public User read(String key) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public boolean update(User entity) {
+		// TODO Auto-generated method stub
+		return false;
+	}
+
+	@Override
+	public boolean delete(String key) {
+		// TODO Auto-generated method stub
+		return false;
+	}
+
+}

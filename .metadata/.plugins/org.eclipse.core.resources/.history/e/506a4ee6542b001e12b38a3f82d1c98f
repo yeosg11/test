@@ -1,0 +1,10 @@
+package com.yeosg1.board.dto.response;
+
+public class SignInResponseDto extends ResponseEntity {
+	
+	private String email;
+	private String nickname;
+	private String profileImage;
+	
+
+}

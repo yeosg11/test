@@ -1,0 +1,7 @@
+package com.yeosg1.board.dto.response;
+
+public class ResponseEntity {
+
+	private int status;
+	
+}

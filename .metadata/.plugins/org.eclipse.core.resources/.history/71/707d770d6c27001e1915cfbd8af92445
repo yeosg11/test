@@ -1,0 +1,24 @@
+package com.yeosg1.board.entity;
+
+// 게시물 번호/ 제목 /내용 /작성일 /[작성자 이메일]/ 작성자닉네임 /작성자 프로필사진/ 댓글 수/ 좋아요 수/ 조회 수/ 게시물 이미지(여러 개)
+// / 좋아요한 사용자의 프로필 사진 / 좋아요한 사용자의 닉네임/ 댓글 작성자의 프로필 사진/[좋아요한 사용자의이메일]/ 댓글 작성자의 닉네임
+// / 댓글 작성 시간/ 댓글 내용
+
+
+public class Board {
+
+	private int boardNumber;
+	private String title;
+	private String contents;
+	private String writeDate;
+	private String writerEmail;
+	private String writerNickname;
+	private String writerProfileImage;
+	private int commentCount;
+	private int likeCount;
+	private int viewCount;
+	private List<Spring> imageList;
+	
+	
+	
+}

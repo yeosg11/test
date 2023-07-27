@@ -1,0 +1,78 @@
+package com.yeosg1.board.repository.implement;
+
+import com.yeosg1.board.entity.User;
+import com.yeosg1.board.repository.UserRepository;
+
+public class UserRepositoryImplement implements UserRepository {
+
+	@Override
+	public boolean create(User entity) {
+		// entity가 null 인지?
+		if (entity == null) return false;
+		// 필수 값이 모두 입력되었는지?
+		if (entity.getEmail() == null || entity.getPassword() == null ||
+				entity.getNickname() == null || entity.getTelNumber() ||
+				entity.getAddress() == null) {
+			return false;	
+		}
+		if(entity.getEmail().isBlank() || entity.getPassword().isBlank() ||
+			 entity.getNickname().isBlank() || entity.getTelNumber().isBlank() ||
+			 entity.getAddress().isBlank() || !entity.isAgreePersonal()) {
+		return false;
+		
+	}
+	USERS.add(entity);
+	
+	return true;
+
+	@Override
+	public User read(String key) {
+		User result = null;
+		
+		for (User user: USERS) {
+			String email = user.getEmail();
+			
+			if (email.equals(key)) {
+				result = user;
+				break;
+			}
+		}
+		return result;
+	}
+
+	@Override
+	public boolean update(User entity) {
+		if(entity == null) return false;
+		
+		String email = entity.getEmail();
+		
+		for (int index = 0; index < USERS.size(); index++) {
+			User user = USERS.get(index);
+			String findEmail = user.getEmail();
+			
+			if (email.equals(findEmail)) {
+				USERS.set(index, entity);
+				break;
+			}
+		}
+		
+		return true;
+	}
+
+	@Override
+	public boolean delete(String key) {
+		if (key== null) return false;
+		
+		for (int index = 0; index < USERS.size(); index++) {
+			User user = USERS.get(index);
+			String email = user.getEmail();
+			
+			if (key.equals(email)) {
+				USERS.remove(index) ;
+				break;
+			}
+		}
+		return false;
+	}
+
+}

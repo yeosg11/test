@@ -1,0 +1,67 @@
+package com.yeosg1.board;
+
+import java.util.Scanner;
+import com.yeosg1.board.controller.UserController;
+import com.yeosg1.board.controller.implement.UserControllerImplement;
+import com.yeosg1.board.dto.response.SignUpRequestDto;
+import com.yeosg1.board.dto.response.SignUpResponseDto;
+import com.yeosg1.board.repository.UserRepository;
+import com.yeosg1.board.repository.implement.UserRepositoryImplement;
+import com.yeosg1.board.service.UserService;
+import com.yeosg1.board.service.Implement.UserServiceImplement;
+
+public class BoardApplication {
+
+	public static void main(String[] args) {
+		
+		Scanner scanner = new Scanner(System.in);
+		
+		UserRepository userRepository = new UserRepositoryImplement();
+		UserService userService = new UserServiceImplement(userRepository);
+		UserController userController = new UserControllerImplement(userService);
+		
+		SignUpRequestDto dto = new SignUpRequestDto();
+		
+		System.out.println("이메일 : ");
+		dto.setEmail(scanner.nextLine());
+		System.out.println("비밀번호 : ");
+		dto.setPassword(scanner.nextLine());
+		System.out.println("비밀번호 확인 : ");
+		dto.setPasswordCheck(scanner.nextLine());
+		System.out.println("닉네임 : ");
+		dto.setNickname(scanner.nextLine());
+		System.out.println("전화번호 : ");
+		dto.setTelNumber(scanner.nextLine());
+		System.out.println("주소 : ");
+		dto.setAddress(scanner.nextLine());
+		System.out.println("상세 주소 : ");
+		dto.setAddressDetail(scanner.nextLine());
+		System.out.println("개인정보 처리 동의 : ");
+		dto.setAgreedPersonal(scanner.nextBoolean());
+
+		SignUpResponseDto result = userController.signUp(dto);
+		System.out.println(result.toString());
+
+	}
+
+}
+		
+		// com.사명.프로젝트명
+		// **Application.java
+		// controller(입출력/입출력에 대한 검증)
+		// Service(실제 비즈니스 로직)
+		// Repository (데이터베이스 접근)
+		// Dto (client . controller - service 가느이 데이터 전송)
+		// Entity (service - repository - database 간의 데이터 전송)
+		// Provider (데이터 제공)
+		// Handler (이벤트 발생시 대처 혹은 작업)
+		// Filter (서비스 이용 필터링)
+		// Common / Util(기타 등등)
+		
+		// 회원 가입 기능
+		// 이메일주소, 비밀번호, 비밀번호확인, 닉네임, 핸드폰번호, 주소, 상세주소, 개인정보동의여부
+		// 성공(??)
+		// 실패 
+		// - 중복된 이메일,이메일 포멧, 비밀번호 불일치, 글자수 길이8자, 빈닉네임, 휴대폰번호숫자
+		// - 우편번호 입력, 개인정보동의 미체크, 휴대폰번호 중복, 닉네임 중복
+		//

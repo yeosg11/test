@@ -1,0 +1,5 @@
+package com.yeosg1.board.entity;
+
+public class Comment {
+
+}

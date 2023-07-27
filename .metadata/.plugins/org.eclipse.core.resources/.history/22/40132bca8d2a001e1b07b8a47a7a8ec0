@@ -1,0 +1,9 @@
+package com.yeosg1.board.controller;
+
+import com.yeosg1.board.dto.response.SignUpRequestDto;
+import com.yeosg1.board.dto.response.SignUpResponseDto;
+
+public interface UserController {
+	SignUpResponseDto signUp (SignUpRequstDto requstDto);
+	
+}

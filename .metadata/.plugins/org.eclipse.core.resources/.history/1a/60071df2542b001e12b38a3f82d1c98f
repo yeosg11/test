@@ -1,0 +1,14 @@
+package com.yeosg1.board.service;
+
+import com.yeosg1.board.dto.request.SignInRequestDto;
+import com.yeosg1.board.dto.request.SignUpRequestDto;
+import com.yeosg1.board.dto.response.ResponseEntity;
+import com.yeosg1.board.dto.response.SignInResponseDto;
+import com.yeosg1.board.dto.response.SignUpRequestDto;
+
+
+public interface UserService {
+	ResponseEntity<SignUpResponseDto> signUp(SignUpRequestDto dto);
+	ResponseEntity<SignInResponseDto> signUp(SignInRequestDto dto);
+	
+}

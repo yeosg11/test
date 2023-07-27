@@ -1,0 +1,25 @@
+package com.yeosg1.board.dto.response;
+
+public class ResponseEntity<D> {
+	private int status;
+	private String message;
+	private D data;
+
+	public ResponseEntity(int status, String message, D data) {
+		this.status = status;
+		this.message = message;
+		this.data = data;
+	}
+
+	@Override
+	public String toString() {
+		return "ResponseEntity [status=" + status + ", message=" + message + ", data=" + data + "]";
+	}
+	
+	public static <D> ResponseEntity<D> badRequest() {
+		return new ResponseEntity<D>(400, "올바르지 않은 입력입니다.", null);
+		
+	}
+	
+	
+}

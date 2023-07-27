@@ -1,0 +1,15 @@
+package com.yeosg1.board.controller.implement;
+
+import com.yeosg1.board.controller.UserController;
+import com.yeosg1.board.dto.response.SignUpRequestDto;
+import com.yeosg1.board.dto.response.SignUpResponseDto;
+
+public class UserControllerImplement implements UserController {
+
+	@Override
+	public SignUpResponseDto signUp(SignUpRequestDto requstDto) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+}

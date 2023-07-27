@@ -1,0 +1,27 @@
+package com.yeosg1.board.controller.implement;
+
+import com.yeosg1.board.controller.UserController;
+import com.yeosg1.board.dto.response.SignUpRequestDto;
+import com.yeosg1.board.dto.response.SignUpResponseDto;
+import com.yeosg1.board.service.UserService;
+
+public class UserControllerImplement implements UserController {
+
+private final UserService userService ;
+	
+	public UserControllerImplement(UserService userService) {
+		this.userService = userService ;
+		
+	}
+	
+	@Override
+	public SignUpResponseDto signUp(SignUpRequestDto requestDto) {
+
+		boolean isValid = requestDto.valid();
+		if (!isValid) return new SignUpResponseDto(false, "올바르지 않은 입력입니다.")
+		
+		SignUpResponseDto result = userService.signUp(requstDto);
+		return result; 
+	}
+
+}

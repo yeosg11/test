@@ -1,0 +1,35 @@
+package chapter3;
+
+class Result<Type> {
+	int code;
+	String message;
+	String name;
+	Type age;
+	
+	void print() {
+		System.out.println("안녕");
+	}
+
+
+	<Parameter>void print(Parameter parameter) {
+		
+	}
+public class Generic {
+
+	public static void main(String[] args) {
+		Result<String> result = new Result<String>();
+
+		result.age = "23";
+		//result.age = 23;
+		
+		
+		Object age = (String)result.age;
+		System.out.println(age );
+		
+		
+		
+
+	}
+
+}
+}

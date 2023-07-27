@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<qualifiedTypeNameHistroy>
+    <fullyQualifiedTypeName name="java.lang.System"/>
+    <fullyQualifiedTypeName name="chapter2.Student"/>
+    <fullyQualifiedTypeName name="java.lang.Math"/>
+    <fullyQualifiedTypeName name="java.util.Scanner"/>
+    <fullyQualifiedTypeName name="example.parking.ParkingSpace"/>
+    <fullyQualifiedTypeName name="java.lang.String"/>
+    <fullyQualifiedTypeName name="Chapter2_1.Modifier2"/>
+    <fullyQualifiedTypeName name="java.util.Set"/>
+    <fullyQualifiedTypeName name="java.util.LinkedHashSet"/>
+    <fullyQualifiedTypeName name="java.util.TreeSet"/>
+    <fullyQualifiedTypeName name="java.util.HashMap"/>
+    <fullyQualifiedTypeName name="java.util.HashSet"/>
+    <fullyQualifiedTypeName name="java.util.Map"/>
+    <fullyQualifiedTypeName name="java.util.GregorianCalendar"/>
+    <fullyQualifiedTypeName name="java.util.Calendar"/>
+    <fullyQualifiedTypeName name="java.time.LocalTime"/>
+    <fullyQualifiedTypeName name="java.time.LocalDate"/>
+    <fullyQualifiedTypeName name="java.time.LocalDateTime"/>
+    <fullyQualifiedTypeName name="java.util.Date"/>
+    <fullyQualifiedTypeName name="java.text.SimpleDateFormat"/>
+    <fullyQualifiedTypeName name="com.yeosg1.board.common.BoardIndex"/>
+    <fullyQualifiedTypeName name="java.util.ArrayList"/>
+    <fullyQualifiedTypeName name="java.util.List"/>
+    <fullyQualifiedTypeName name="java.awt.desktop.UserSessionListener"/>
+    <fullyQualifiedTypeName name="com.yeosg1.board.entity.User"/>
+    <fullyQualifiedTypeName name="java.util.regex.Pattern"/>
+    <fullyQualifiedTypeName name="com.yeosg1.board.dto.response.SignUpResponseDto"/>
+    <fullyQualifiedTypeName name="com.yeosg1.board.service.UserService"/>
+    <fullyQualifiedTypeName name="com.yeosg1.board.service.Implement.UserServiceImplement"/>
+    <fullyQualifiedTypeName name="com.yeosg1.board.repository.UserRepository"/>
+    <fullyQualifiedTypeName name="com.yeosg1.board.controller.UserController"/>
+    <fullyQualifiedTypeName name="com.yeosg1.board.controller.implement.UserControllerImplement"/>
+    <fullyQualifiedTypeName name="com.yeosg1.board.repository.implement.UserRepositoryImplement"/>
+    <fullyQualifiedTypeName name="com.yeosg1.board.dto.response.SignUpRequestDto"/>
+    <fullyQualifiedTypeName name="com.yeosg1.board.common.PatternValidator"/>
+    <fullyQualifiedTypeName name="java.util.regex.Matcher"/>
+</qualifiedTypeNameHistroy>
